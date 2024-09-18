@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    background-color: rgb(32, 32, 32);
+    overflow-x: hidden;
+}
+
+.layout {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.menu {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(80, 79, 79);
+}
+
+.nome {
+    margin-left: 10%;
+    padding-top: 10px;
+    color: red;
+    font-family: "Dosis", sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 70vh;
+    width: 100%;
+}
+
+.texto {
+    height: 100%;
+    width: 50%;
+}
+
+.imagem {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 70%;
+}
+
+.sobre {
+    margin: 2% 5%;
+    font-size: 26px;
+    color: white;
+    text-align: justify;
+}
+
+.texto h1 {
+    font-family: "Arimo", sans-serif;
+    margin-top: 20%;
+    margin-left: 5%;
+    font-size: 50px;
+    color: red;
+}
+
+.amilcar {
+    font-family: "Arimo", sans-serif;
+    margin-left: 25%;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-left: 30%;
+    padding: 0;
+}
+
+ul li {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 15px 20px;
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+}
+
+ul li:hover {
+    background-color: red;
+    border-radius: 5px;
+}
+
+.desenho {
+    display: flex;
+    position: absolute;
+    top: 700px;
+    left: -70px;
+    height: 400px;
+    width: 400px;
+    rotate: 45deg;
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 10%;
+}
+
+.desenho2 {
+    display: flex;
+    position: absolute;
+    top: 1500px;
+    right: -50px;
+    height: 400px;
+    width: 400px;
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.formacao {
+    display: flex;
+    width: 100%;
+    gap: 10%;
+    justify-content: center;
+}
+
+.educacao {
+    height: 300px;
+    width: 170px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 3px solid #ffffff;
+    cursor: pointer;
+    transform: translateX(0);
+    transition: background-color 0.5s, transform 0.5s ease;
+    box-shadow: 5px 5px 15px rgb(255, 0, 0);
+}
+
+.graduacao {
+    height: 300px;
+    width: 170px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 3px solid #ffffff;
+    cursor: pointer;
+    transform: translateX(0);
+    transition: background-color 0.5s, transform 0.5s ease;
+    box-shadow: 5px 5px 15px rgb(255, 0, 0);
+}
+
+.pos_graduacao {
+    height: 300px;
+    width: 170px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 3px solid #ffffff;
+    cursor: pointer;
+    transform: translateX(0);
+    transition: background-color 0.5s, transform 0.5s ease;
+    box-shadow: 5px 5px 15px rgb(255, 0, 0);
+}
+
+.educacao:hover {
+    background-color: rgb(80, 79, 79);
+    transform: translateY(-10px);
+}
+
+.graduacao:hover {
+    background-color: rgb(80, 79, 79);
+    transform: translateY(-10px);
+}
+
+.pos_graduacao:hover {
+    background-color: rgb(80, 79, 79);
+    transform: translateY(-10px);
+}
+
+.livros {
+    display: block;
+    height: 100px;
+    transform: translate(35%, 50%);
+}
+
+h3 {
+    font-family: "Arimo", sans-serif;
+    transform: translate(5%, 400%);
+    height: 20px;
+    color: red;
+
+}
+
+.texto_educacao {
+    margin-top: 40px;
+    display: none;
+    height: 500px;
+    width: 100%;
+    border-radius: 0 60px;
+    background-color: rgb(80, 79, 79);
+}
+
+.texto_graduacao {
+    margin-top: 40px;
+    display: none;
+    height: 500px;
+    width: 100%;
+    border-radius: 0 60px;
+    background-color: rgb(80, 79, 79);
+}
+
+.texto_pos {
+    margin-top: 40px;
+    display: none;
+    height: 500px;
+    width: 100%;
+    border-radius: 0 60px;
+    background-color: rgb(80, 79, 79);
+}
+
+.craveiro_img {
+    display: flex;
+    height: 100%;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.craveiro_texto {
+    height: 100%;
+    width: 60%;
+
+}
+
+.craveiro_texto p {
+    margin: 2% 5%;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+}
+
+.craveiro_texto h1 {
+    font-family: "Arimo", sans-serif;
+    margin-left: 25%;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    margin-top: 7%;
+
+}
+
+.craveiro_foto {
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+
+}
+
+.ifsp_texto {
+    height: 100%;
+    width: 60%;
+}
+
+.ifsp_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+}
+
+.ifsp_texto h1 {
+    font-family: "Arimo", sans-serif;
+    margin-left: 25%;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    margin-top: 7%;
+}
+
+.ifsp_texto p {
+    margin: 2% 5%;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+}
+
+.ifsp_foto {
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+}
+
+.ime_texto {
+    height: 100%;
+    width: 60%;
+}
+
+.ime_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+}
+
+.ime_texto h1 {
+    font-family: "Arimo", sans-serif;
+    margin-left: 25%;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    margin-top: 7%;
+}
+
+.ime_texto p {
+    margin: 2% 5%;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+}
+
+.ime_foto {
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+}
+
+.texto_inicio {
+    height: 500px;
+    width: 100%;
+
+}
+
+.texto_inicio h1 {
+    font-family: "Arimo", sans-serif;
+    margin-top: 0%;
+    margin-left: 60%;
+    font-size: 50px;
+    color: white;
+}
+
+.texto_inicio p {
+    margin: 2% 5%;
+    font-size: 26px;
+    color: white;
+    text-align: justify;
+}
+
+.rodape {
+    margin-top: 10%;
+    height: 500px;
+    width: 100vw;
+    background-color: rgb(80, 79, 79);
+}
+
+.projeto {
+    margin-top: 10%;
+    margin-left: 15%;
+
+
+}
+
+.projeto h1 {
+    color: white;
+    font-size: 40px;
+
+}
+
+.container2 {
+    height: 440px;
+    width: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 6px 6px 5px rgba(243, 242, 242, 0.5);
+}
+
+.caixa_img img {
+    height: 100%;
+    width: 100%;
+}
+
+.navegacao {
+    margin-top: 3%;
+    margin-left: -15%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.bar {
+    height: 15px;
+    width: 15px;
+    border: 2px solid white;
+    margin: 6px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.bar:hover {
+    background-color: white;
+}
+
+.radio {
+    display: none;
+}
+
+.caixa_img {
+    display: flex;
+    transition: margin-left 0.6s ease-in-out;
+    width: 1000%;
+    height: 100%;
+}
+
+.caixa {
+    width: 20%;
+    transition: .6s;
+}
+
+#slide1:checked~.caixa_img {
+    margin-left: 0%;
+}
+
+#slide2:checked~.caixa_img {
+    margin-left: -20%;
+}
+
+#slide3:checked~.caixa_img {
+    margin-left: -40%;
+}
+
+#slide4:checked~.caixa_img {
+    margin-left: -60%;
+}
+
+#slide5:checked~.caixa_img {
+    margin-left: -80%;
+}
+
+.rodape {
+    display: flex;
+    padding: 50px;
+}
+
+.contato_email {
+    max-width: 600px;
+    margin-left: 50px; 
+}
+
+form {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    display: flex;
+    gap: 20px; 
+}
+
+.form-group {
+    flex: 1; 
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px; 
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+.redes{
+    height: 50%;
+    width: 900px;
+    margin-top: 8%;
+    margin-left: 10%;
+}
+.imgg {
+    height: 50px;
+    width: auto; 
+    display: block;
+}
+
+.icones_rede {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 60px; 
+     
+    align-items: center; 
+    padding: 20px; 
+}
+
+.icones_rede a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; 
+    height: 60px;
+    background-color: white; 
+    border-radius: 50%; 
+    transition: background-color 0.3s, transform 0.3s; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.icones_rede a:hover {
+    background-color: #ddd; 
+    transform: scale(1.1); 
+}
